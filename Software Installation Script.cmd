@@ -31,11 +31,8 @@ else (
     pushd "%CD%"
     CD /D "%~dp0"
 
-Rem --> Opening installers folder
-cd Installers
-
 echo ====================================================================================================
-echo ========================== Univerexport Back Office Softwate Installation ==========================
+echo ====================================== Softwate Installation =======================================
 echo ====================================================================================================
 echo -
 
@@ -46,7 +43,7 @@ Rem --> Installing CCleaner
 
 echo Installing CCleaner . . .
 echo -
-ccsetup.exe /S
+"\\Share\Software-Installers\CCleaner\ccsetup.exe" /S
 echo CCleaner successfully installed
 echo -
 
@@ -56,18 +53,18 @@ Rem --> Installing Java JRE
 
 echo Installing Java 1.6 u43 x64 . . .
 echo -
-jre-6u43-windows-x64.exe INSTALLCFG=java.cfg /s
+"\\Share\Software-Installers\Java\jre-6u43-windows-x64.exe" INSTALLCFG="\\Share\Software-Installers\Java\java.cfg" /s
 echo Java successfully installed
 echo -
 
 Rem --> -------------------------------------------------------------------------------------------------
 
-Rem --> Installing 7zip x64
+Rem --> Installing 7-Zip x64
 
 echo Installing 7zip x64 . . .
 echo -
-zip64.exe /S
-echo 7zip successfully installed
+"\\Share\Software-Installers\7-Zip\zip64.exe" /S
+echo 7-Zip successfully installed
 echo -
 
 Rem --> -------------------------------------------------------------------------------------------------
@@ -76,7 +73,7 @@ Rem --> Installing Mozilla Firefox
 
 echo Installing Mozilla Firefox x64 . . .
 echo -
-firefox64.exe /s
+"\\Share\Software-Installers\Firefox\firefox64.exe" /s
 echo Mozilla Firefox successfully installed
 echo -
 
@@ -86,17 +83,17 @@ Rem --> Installing Ultra VNC x64
 
 echo Installing Ultra VNC x64 . . .
 echo -
-UltraVNC64_Setup.exe /silent /loadinf=ultravnc.inf
+"\\Share\Software-Installers\Ultra VNC\UltraVNC64_Setup.exe" /silent /loadinf="\\Share\Software-Installers\Ultra VNC\ultravnc.inf"
 echo Ultra VNC x64 successfully installed
 echo -
 
 Rem --> -------------------------------------------------------------------------------------------------
 
-Rem --> Installing Rocket Chat
+Rem --> Installing Rocket.Chat
 
-echo Installing Rocket Chat . . .
+echo Installing Rocket.Chat . . .
 echo -
-rocketchat-setup.exe /S /allusers
+"\\Share\Software-Installers\Rocket.Chat\rocketchat-setup.exe" /S /allusers
 echo Rocket Chat successfully installed
 echo -
 
@@ -106,7 +103,7 @@ Rem --> Installing Notepad++
 
 echo Installing Notepad++ . . .
 echo -
-Notepad++.exe /S
+"\\Share\Software-Installers\Notepad++\Notepad++.exe" /S
 echo Notepad++ successfully installed
 echo -
 
@@ -116,7 +113,7 @@ Rem --> Installing Speccy
 
 echo Installing Speccy . . .
 echo -
-SpeccySetup.exe /S
+"\\Share\Software-Installers\Speccy\SpeccySetup.exe" /S
 echo Speccy successfully installed
 echo -
 
@@ -126,7 +123,7 @@ Rem --> Installing Foxit Reader
 
 echo Installing Foxit Reader . . .
 echo -
-FoxitReader.exe /S
+"\\Share\Software-Installers\Foxit Reader\FoxitReader.exe" /S
 echo Foxit Reader successfully installed
 echo -
 
