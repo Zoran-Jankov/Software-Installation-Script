@@ -1,6 +1,6 @@
 # Software-Installation-Script
 
-[![Windows-Batch](https://img.shields.io/badge/Windows-Batch-brightgreen)](https://en.wikipedia.org/wiki/Batch_file)
+[![Windows-Batchfile](https://img.shields.io/badge/Windows-Batchfile-brightgreen)](https://en.wikipedia.org/wiki/Batch_file)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 Software-Installation-Script for software auto-installation.
